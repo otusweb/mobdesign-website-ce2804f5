@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
           Let's Create Something Extraordinary
         </h2>
         <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
@@ -23,7 +23,7 @@ const Contact = () => {
             <p className="text-muted-foreground mb-6">
               Reach out directly for project inquiries and consultations.
             </p>
-            <a href="mailto:hello@luxuryapps.com" className="text-accent font-semibold hover:text-accent-glow transition-smooth">
+            <a href="mailto:hello@luxuryapps.com" className="text-accent font-semibold hover:text-accent-light transition-smooth">
               hello@luxuryapps.com
             </a>
           </div>
@@ -36,15 +36,15 @@ const Contact = () => {
             <p className="text-muted-foreground mb-6">
               Speak with our experts about your vision and requirements.
             </p>
-            <a href="tel:+1-555-LUXURY" className="text-accent font-semibold hover:text-accent-glow transition-smooth">
+            <a href="tel:+1-555-LUXURY" className="text-accent font-semibold hover:text-accent-light transition-smooth">
               +1 (555) LUXURY
             </a>
           </div>
         </div>
 
         {/* Main CTA */}
-        <div className="bg-gradient-to-r from-primary to-primary-glow rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-serif font-semibold mb-6">
+        <div className="bg-gradient-to-r from-primary to-primary-light rounded-2xl p-12 text-white">
+          <h3 className="text-3xl font-semibold mb-6">
             Start Your Digital Transformation Today
           </h3>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">

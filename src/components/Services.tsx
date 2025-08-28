@@ -28,7 +28,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Tailored Solutions for Premium Venues
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ const Services = () => {
             <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               {/* Content */}
               <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                <h3 className="text-3xl font-serif font-semibold text-primary">
+                <h3 className="text-3xl font-semibold text-primary">
                   {service.title}
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -63,7 +63,7 @@ const Services = () => {
 
               {/* Image */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                <div className="relative rounded-2xl overflow-hidden shadow-luxury">
+                <div className="relative rounded-2xl overflow-hidden shadow-primary">
                   <img 
                     src={service.image} 
                     alt={service.title}
