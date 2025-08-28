@@ -1,0 +1,72 @@
+import { Button } from "@/components/ui/button";
+
+const Contact = () => {
+  return (
+    <section className="py-24 bg-background">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* Header */}
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+          Let's Create Something Extraordinary
+        </h2>
+        <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+          Ready to revolutionize your venue's digital experience? We're here to help you 
+          create mobile solutions that exceed your guests' expectations and drive your business forward.
+        </p>
+
+        {/* Contact Options */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="bg-white rounded-2xl p-8 shadow-subtle border border-border">
+            <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-2xl">📧</span>
+            </div>
+            <h3 className="text-xl font-semibold text-primary mb-4">Email Us</h3>
+            <p className="text-muted-foreground mb-6">
+              Reach out directly for project inquiries and consultations.
+            </p>
+            <a href="mailto:hello@luxuryapps.com" className="text-accent font-semibold hover:text-accent-glow transition-smooth">
+              hello@luxuryapps.com
+            </a>
+          </div>
+
+          <div className="bg-white rounded-2xl p-8 shadow-subtle border border-border">
+            <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-2xl">📞</span>
+            </div>
+            <h3 className="text-xl font-semibold text-primary mb-4">Call Us</h3>
+            <p className="text-muted-foreground mb-6">
+              Speak with our experts about your vision and requirements.
+            </p>
+            <a href="tel:+1-555-LUXURY" className="text-accent font-semibold hover:text-accent-glow transition-smooth">
+              +1 (555) LUXURY
+            </a>
+          </div>
+        </div>
+
+        {/* Main CTA */}
+        <div className="bg-gradient-to-r from-primary to-primary-glow rounded-2xl p-12 text-white">
+          <h3 className="text-3xl font-serif font-semibold mb-6">
+            Start Your Digital Transformation Today
+          </h3>
+          <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+            Every exceptional venue deserves an exceptional mobile experience. 
+            Let's discuss how we can bring your vision to life with cutting-edge technology 
+            and premium design.
+          </p>
+          <Button variant="hero" size="lg" className="text-lg px-12 py-4">
+            Book Your Free Consultation
+          </Button>
+        </div>
+
+        {/* Additional Info */}
+        <div className="mt-16 text-sm text-muted-foreground">
+          <p>
+            Trusted by premium venues worldwide • Specialized in luxury hospitality • 
+            Award-winning design & development team
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
