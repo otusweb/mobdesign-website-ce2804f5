@@ -118,6 +118,20 @@
     background: var(--gradient-subtle);
   }
   
+  .bg-texture-subtle {
+    background-image: url('/lovable-uploads/706471b1-a804-4563-be96-c6bd88dcfb98.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-texture-orange {
+    background-image: url('/lovable-uploads/0f9d0bf4-91f0-4e0a-b3df-83f62cbe95b3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
   .shadow-primary {
     box-shadow: var(--shadow-primary);
   }

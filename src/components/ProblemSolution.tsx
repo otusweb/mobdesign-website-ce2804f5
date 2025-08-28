@@ -30,7 +30,7 @@ const ProblemSolution = () => {
   ];
 
   return (
-    <section className="py-24 gradient-subtle">
+    <section className="py-24 bg-texture-subtle">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">

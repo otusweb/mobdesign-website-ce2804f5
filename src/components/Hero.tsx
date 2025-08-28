@@ -9,12 +9,8 @@ const Hero = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImage} 
-            alt="Luxury hotel with modern technology"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 gradient-hero opacity-80"></div>
+          <div className="w-full h-full bg-texture-orange"></div>
+          <div className="absolute inset-0 gradient-hero opacity-60"></div>
         </div>
         
         {/* Content */}

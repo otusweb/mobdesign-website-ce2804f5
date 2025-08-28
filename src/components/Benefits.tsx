@@ -33,7 +33,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-24 gradient-hero text-white">
+    <section className="py-24 bg-texture-orange text-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
