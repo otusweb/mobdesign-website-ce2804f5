@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
-import luxuryPropertyImage from "@/assets/luxury-property-hero.jpg";
+import parisHotelImage from "@/assets/paris-luxury-hotel-hero.jpg";
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="absolute inset-0 z-0">
           <div 
             className="w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${luxuryPropertyImage})` }}
+            style={{ backgroundImage: `url(${parisHotelImage})` }}
           ></div>
           <div className="absolute inset-0 gradient-hero opacity-60"></div>
         </div>
