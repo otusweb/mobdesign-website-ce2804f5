@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
-import heroImage from "@/assets/hero-luxury-hotel.jpg";
+import luxuryPropertyImage from "@/assets/luxury-property-hero.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,10 @@ const Hero = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-texture-orange"></div>
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${luxuryPropertyImage})` }}
+          ></div>
           <div className="absolute inset-0 gradient-hero opacity-60"></div>
         </div>
         
