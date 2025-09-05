@@ -32,7 +32,9 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed opacity-90">
-            restaurants deliver exceptional experiences through innovative self-service and community building tools
+          We create premium mobile applications that transform how high-end country clubs, 
+          hotels, and restaurants deliver exceptional experiences through innovative self-service 
+          and community building tools.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
