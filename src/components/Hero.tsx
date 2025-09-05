@@ -17,7 +17,7 @@ const Hero = () => {
             playsInline
             poster={parisHotelImage}
           >
-            <source src="/heroVideo.mp4" type="video/mp4" />
+            <source src="/public/heroVideo.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 gradient-hero opacity-60"></div>
         </div>
