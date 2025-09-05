@@ -39,7 +39,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Transform Your Venue
+              View our work
             </Button>
             <Button variant="heroOutline" size="lg" className="text-lg px-8 py-4">
               View Our Work
