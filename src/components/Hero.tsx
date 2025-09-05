@@ -1,22 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import parisHotelImage from "@/assets/paris-luxury-hotel-hero.jpg";
-
 const Hero = () => {
-  return (
-    <>
+  return <>
       <Header />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={parisHotelImage}
-          >
+          <video className="w-full h-full object-cover" autoPlay muted loop playsInline poster={parisHotelImage}>
             <source src="/heroVideo.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 gradient-hero opacity-60"></div>
@@ -41,9 +32,7 @@ const Hero = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-4">
               View our work
             </Button>
-            <Button variant="heroOutline" size="lg" className="text-lg px-8 py-4">
-              View Our Work
-            </Button>
+            
           </div>
           
           {/* Scroll indicator */}
@@ -54,8 +43,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Hero;
