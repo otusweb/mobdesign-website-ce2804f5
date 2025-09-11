@@ -27,7 +27,14 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <button className="gradient-accent text-accent-foreground px-6 py-2 rounded-lg font-semibold shadow-accent hover:shadow-primary transition-smooth transform hover:scale-105">Talk with us about your app</button>
+          <a 
+            href="https://tidycal.com/olivierdestrebecq/hospitality-mobile-app-informational-call" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="gradient-accent text-accent-foreground px-6 py-2 rounded-lg font-semibold shadow-accent hover:shadow-primary transition-smooth transform hover:scale-105 inline-block"
+          >
+            Talk with us about your app
+          </a>
         </div>
       </div>
     </header>;
