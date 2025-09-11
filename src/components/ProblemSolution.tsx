@@ -20,7 +20,7 @@ const ProblemSolution = () => {
       description: "Your app is an extension of your property, your vision. Not a third party company."
     },
     {
-      title: "On brand mobile apps",
+      title: "A modern iOS and Android app",
       description: "An app that is as refined as your property using the latest mobile technology and design."
     },
     {
