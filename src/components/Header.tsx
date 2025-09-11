@@ -1,15 +1,10 @@
 const Header = () => {
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/4159c8bf-7cf4-4529-8646-aead76ba80dc.png" 
-              alt="Company Logo"
-              className="w-10 h-10 rounded-lg"
-            />
+            <img src="/lovable-uploads/4159c8bf-7cf4-4529-8646-aead76ba80dc.png" alt="Company Logo" className="w-10 h-10 rounded-lg" />
             <span className="text-xl font-semibold text-primary">
               Venue Solutions
             </span>
@@ -32,13 +27,9 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <button className="gradient-accent text-accent-foreground px-6 py-2 rounded-lg font-semibold shadow-accent hover:shadow-primary transition-smooth transform hover:scale-105">
-            Get Started
-          </button>
+          <button className="gradient-accent text-accent-foreground px-6 py-2 rounded-lg font-semibold shadow-accent hover:shadow-primary transition-smooth transform hover:scale-105">Talk with us about your app</button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
