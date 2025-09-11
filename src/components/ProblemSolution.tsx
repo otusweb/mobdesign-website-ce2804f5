@@ -1,32 +1,32 @@
 const ProblemSolution = () => {
   const problems = [
     {
+      title: "Does your story not come through in your digital tools?",
+      description: "You spent months designing your property experience, only to have digital tools that don't tell your story?"
+    },
+    {
       title: "Outdated Service Experience",
-      description: "Guests struggle with slow, traditional service methods that don't match modern expectations"
+      description: "Are your digital tools still a dated looking website that doesn't match modern expectations?"
     },
     {
-      title: "Limited Community Connection", 
-      description: "Members lack platforms to connect, share experiences, and build lasting relationships"
-    },
-    {
-      title: "Operational Inefficiencies",
-      description: "Staff overwhelmed with routine tasks, reducing focus on personalized service delivery"
+      title: "Fragmented user experience", 
+      description: "Do your members have to use one app to open doors, one website to book their rooms and another app to order food?"
     }
   ];
 
   const solutions = [
     {
-      title: "Seamless Self-Service",
-      description: "Intuitive mobile apps that empower guests to order, book, and customize their experience instantly"
+      title: "Your app, your story", 
+      description: "Your app is an extension of your property, your vision"
     },
     {
-      title: "Vibrant Community Features",
-      description: "Connect members through events, messaging, and shared experiences that build lasting relationships"
+      title: "On brand mobile apps",
+      description: "An app that is as refined as your property using the latest mobile technology and design."
     },
     {
-      title: "Streamlined Operations", 
-      description: "Automated workflows that free your staff to focus on what matters most - exceptional hospitality"
-    }
+      title: "Only your mobile app",
+      description: "Your members can book their spa treatment, conference room, fitness class, or dinner reservation all from your app."
+    },
   ];
 
   return (
