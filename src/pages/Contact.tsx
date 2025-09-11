@@ -109,7 +109,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
+                    
                     <Textarea id="message" rows={6} {...register("message")} placeholder="Tell us about your project, goals, and any specific requirements..." />
                     {errors.message && <p className="text-sm text-destructive">{errors.message.message}</p>}
                   </div>
