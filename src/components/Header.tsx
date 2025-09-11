@@ -21,7 +21,7 @@ const Header = () => {
             <a href="#benefits" className="text-primary hover:text-accent transition-smooth">
               Benefits
             </a>
-            <a href="#contact" className="text-primary hover:text-accent transition-smooth">
+            <a href="/contact" className="text-primary hover:text-accent transition-smooth">
               Contact
             </a>
           </nav>
