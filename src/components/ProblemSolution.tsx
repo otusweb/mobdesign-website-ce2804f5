@@ -17,7 +17,7 @@ const ProblemSolution = () => {
   const solutions = [
     {
       title: "Your app, your story", 
-      description: "Your app is an extension of your property, your vision"
+      description: "Your app is an extension of your property, your vision. Not a third party company."
     },
     {
       title: "On brand mobile apps",
