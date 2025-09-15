@@ -45,43 +45,47 @@ const ProblemSolution = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Problems */}
-          <div className="space-y-8">
+          <div className="flex flex-col">
             <h3 className="text-3xl font-semibold text-primary mb-8">
               Current Challenges
             </h3>
-            {problems.map((problem, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-primary">
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-1">
-                  <div className="w-4 h-4 rounded-full bg-destructive"></div>
-                </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">{problem.title}</h4>
-                    <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
+            <div className="flex flex-col space-y-8 flex-1">
+              {problems.map((problem, index) => (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-primary flex-1">
+                <div className="flex items-start space-x-4 h-full">
+                  <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-4 h-4 rounded-full bg-destructive"></div>
+                  </div>
+                    <div className="flex flex-col">
+                      <h4 className="text-xl font-semibold text-primary mb-3">{problem.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Solutions */}
-          <div className="space-y-8">
+          <div className="flex flex-col">
             <h3 className="text-3xl font-semibold text-primary mb-8">
               Our Solutions
             </h3>
-            {solutions.map((solution, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-accent">
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-4 h-4 rounded-full bg-white"></div>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">{solution.title}</h4>
-                    <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+            <div className="flex flex-col space-y-8 flex-1">
+              {solutions.map((solution, index) => (
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-accent flex-1">
+                  <div className="flex items-start space-x-4 h-full">
+                    <div className="w-8 h-8 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 rounded-full bg-white"></div>
+                    </div>
+                    <div className="flex flex-col">
+                      <h4 className="text-xl font-semibold text-primary mb-3">{solution.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
