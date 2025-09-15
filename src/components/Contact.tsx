@@ -69,8 +69,7 @@ const Contact = () => {
         {/* Additional Info */}
         <div className="mt-16 text-sm text-muted-foreground">
           <p>
-            Trusted by premium venues worldwide • Specialized in luxury hospitality • 
-            Award-winning design & development team
+            Made with the French touch
           </p>
         </div>
       </div>
