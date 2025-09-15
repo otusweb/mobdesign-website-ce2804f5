@@ -37,16 +37,16 @@ const Contact = () => {
   });
   const onSubmit = async (data: ContactForm) => {
     setIsSubmitting(true);
-
     try {
-      const { data: result, error } = await supabase.functions.invoke('submit-contact', {
+      const {
+        data: result,
+        error
+      } = await supabase.functions.invoke('submit-contact', {
         body: data
       });
-
       if (error) {
         throw error;
       }
-
       toast({
         title: "Message sent successfully!",
         description: "We'll get back to you within 24 hours. Check your email for confirmation."
@@ -147,9 +147,7 @@ const Contact = () => {
                       Schedule Your Call
                     </a>
                   </Button>
-                  <p className="text-sm text-muted-foreground mt-4 text-center">
-                    Free consultation • No commitment required
-                  </p>
+                  
                 </CardContent>
               </Card>
 
