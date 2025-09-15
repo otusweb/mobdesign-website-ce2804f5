@@ -17,15 +17,17 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-subtle border border-border">
             <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-2xl">📧</span>
+              <span className="text-2xl">💬</span>
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">Email Us</h3>
+            <h3 className="text-xl font-semibold text-primary mb-4">Send Us a Message</h3>
             <p className="text-muted-foreground mb-6">
-              Reach out directly for project inquiries and consultations.
+              Fill out our contact form for project inquiries and consultations.
             </p>
-            <a href="mailto:hello@luxuryapps.com" className="text-accent font-semibold hover:text-accent-light transition-smooth">
-              hello@luxuryapps.com
-            </a>
+            <Button asChild variant="outline">
+              <a href="/contact" className="text-accent font-semibold hover:text-accent-light transition-smooth">
+                Contact Form
+              </a>
+            </Button>
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-subtle border border-border">
