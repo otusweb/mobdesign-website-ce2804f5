@@ -32,15 +32,22 @@ const Contact = () => {
 
           <div className="bg-white rounded-2xl p-8 shadow-subtle border border-border">
             <div className="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-2xl">📞</span>
+              <span className="text-2xl">📅</span>
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">Call Us</h3>
+            <h3 className="text-xl font-semibold text-primary mb-4">Book a Call</h3>
             <p className="text-muted-foreground mb-6">
-              Speak with our experts about your vision and requirements.
+              Schedule a consultation to discuss your vision and requirements.
             </p>
-            <a href="tel:+1-555-LUXURY" className="text-accent font-semibold hover:text-accent-light transition-smooth">
-              +1 (555) LUXURY
-            </a>
+            <Button asChild variant="outline">
+              <a 
+                href="https://tidycal.com/olivierdestrebecq/hospitality-mobile-app-informational-call" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent font-semibold hover:text-accent-light transition-smooth"
+              >
+                Schedule Meeting
+              </a>
+            </Button>
           </div>
         </div>
 
