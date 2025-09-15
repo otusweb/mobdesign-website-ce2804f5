@@ -49,7 +49,7 @@ const Contact = () => {
       }
       toast({
         title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours. Check your email for confirmation."
+        description: "We'll get back to you as soon as possible. Check your email for confirmation."
       });
       reset();
     } catch (error: any) {
