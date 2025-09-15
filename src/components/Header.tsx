@@ -3,12 +3,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="/" className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition-smooth">
             <img src="/lovable-uploads/4159c8bf-7cf4-4529-8646-aead76ba80dc.png" alt="Company Logo" className="w-10 h-10 rounded-lg" />
             <span className="text-xl font-semibold text-primary">
               Venue Solutions
             </span>
-          </div>
+          </a>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
