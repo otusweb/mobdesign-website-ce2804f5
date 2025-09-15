@@ -6,7 +6,7 @@ const ProblemSolution = () => {
     },
     {
       title: "Outdated Service Experience",
-      description: "Are your digital tools still a dated looking website that doesn't match modern expectations?"
+      description: "Are your digital tools still a dated-looking website that doesn't match modern expectations?"
     },
     {
       title: "Fragmented user experience", 
