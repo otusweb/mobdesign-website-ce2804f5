@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Separator } from "@/components/ui/separator";
 import { Mail, Calendar, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import Header from "@/components/Header";
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -37,16 +38,22 @@ const Contact = () => {
   const onSubmit = async (data: ContactForm) => {
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      // In a real app, you would send this to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const { data: result, error } = await supabase.functions.invoke('submit-contact', {
+        body: data
+      });
+
+      if (error) {
+        throw error;
+      }
+
       toast({
         title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours."
+        description: "We'll get back to you within 24 hours. Check your email for confirmation."
       });
       reset();
-    } catch (error) {
+    } catch (error: any) {
+      console.error("Error submitting contact form:", error);
       toast({
         title: "Error sending message",
         description: "Please try again or contact us directly.",
@@ -109,7 +116,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    
+                    <Label htmlFor="message">Message *</Label>
                     <Textarea id="message" rows={6} {...register("message")} placeholder="Tell us about your project, goals, and any specific requirements..." />
                     {errors.message && <p className="text-sm text-destructive">{errors.message.message}</p>}
                   </div>
