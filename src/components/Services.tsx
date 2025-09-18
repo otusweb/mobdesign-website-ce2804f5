@@ -1,31 +1,34 @@
-import countryClubImage from "@/assets/country-club-dining.jpg";
-import socialClubImage from "@/assets/social-club-lounge.jpg";
+import coworkingSpaceImage from "@/assets/coworking-space-service.jpg";
+import luxuryHotelImage from "@/assets/luxury-hotel-service.jpg";
+import fineDiningImage from "@/assets/fine-dining-service.jpg";
+import fitnessWellnessImage from "@/assets/fitness-wellness-service.jpg";
+import exclusiveSpaImage from "@/assets/exclusive-spa-service.jpg";
 const Services = () => {
   const services = [{
     title: "Coworking spaces services",
     description: "Conference room booking, desk booking and event booking that enhances the exclusive coworking space experience.",
     features: ["Tee Time Management", "Member Network", "Event Planning", "Pro Shop Integration"],
-    image: countryClubImage
+    image: coworkingSpaceImage
   }, {
     title: "Luxury Hotels services",
     description: "Concierge services, room service ordering, room booking, and guest communication platforms that redefine hospitality standards.",
     features: ["Digital Concierge", "Room Service", "Room Booking", "Guest Services"],
-    image: socialClubImage
+    image: luxuryHotelImage
   }, {
     title: "Fine Dining services",
     description: "Reservation management, menu list access and payment from the app to create unforgettable dining experiences.",
     features: ["Reservation System", "Menus", "Payment"],
-    image: countryClubImage
+    image: fineDiningImage
   }, {
     title: "Fitness & Wellness Services",
     description: "Personal training sessions, group fitness classes and payment from the app  to elevate you fitness room experience.",
     features: ["Private sessions", "Group class", "Payment"],
-    image: countryClubImage
+    image: fitnessWellnessImage
   }, {
     title: "Exclusive Spa services",
     description: "Reservation management, and payment from the app to create unforgettable dining experiences.",
     features: ["Reservation System", "Menus", "Payment"],
-    image: countryClubImage
+    image: exclusiveSpaImage
   }];
   return <section className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
