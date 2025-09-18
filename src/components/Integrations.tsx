@@ -1,39 +1,54 @@
+import peoplevineLogoImage from "@/assets/logos/peoplevine-logo.png";
+import mewsLogoImage from "@/assets/logos/mews-logo.png";
+import sevenroomsLogoImage from "@/assets/logos/sevenrooms-logo.png";
+import saltoLogoImage from "@/assets/logos/salto-logo.png";
+import stripeLogoImage from "@/assets/logos/stripe-logo.png";
+import crispLogoImage from "@/assets/logos/crisp-logo.png";
+import yousignLogoImage from "@/assets/logos/yousign-logo.png";
+
 const Integrations = () => {
   const integrations = [
     {
       name: "PeopleVine",
       description: "Complete customer relationship management and loyalty platform for hospitality venues",
-      category: "CRM & Loyalty"
+      category: "CRM & Loyalty",
+      logo: peoplevineLogoImage
     },
     {
       name: "Mews",
       description: "Cloud-based property management system for hotels and hospitality businesses",
-      category: "Property Management"
+      category: "Property Management",
+      logo: mewsLogoImage
     },
     {
       name: "SevenRooms",
       description: "Guest experience and retention platform for restaurants and venues",
-      category: "Reservations"
+      category: "Reservations",
+      logo: sevenroomsLogoImage
     },
     {
       name: "Salto",
       description: "Smart access control and mobile key solutions for hotels and buildings",
-      category: "Access Control"
+      category: "Access Control",
+      logo: saltoLogoImage
     },
     {
       name: "Stripe",
       description: "Secure payment processing and financial infrastructure for online businesses",
-      category: "Payments"
+      category: "Payments",
+      logo: stripeLogoImage
     },
     {
       name: "Crisp",
       description: "Customer messaging platform for support and engagement",
-      category: "Customer Support"
+      category: "Customer Support",
+      logo: crispLogoImage
     },
     {
       name: "Yousign",
       description: "Electronic signature solution for seamless document workflows",
-      category: "Digital Signatures"
+      category: "Digital Signatures",
+      logo: yousignLogoImage
     }
   ];
 
@@ -55,11 +70,13 @@ const Integrations = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {integrations.map((integration, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-subtle border border-border transition-smooth hover:shadow-primary group">
-              {/* Integration Icon/Logo Placeholder */}
-              <div className="w-16 h-16 gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
-                <span className="text-2xl font-bold text-white">
-                  {integration.name.charAt(0)}
-                </span>
+              {/* Company Logo */}
+              <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform p-2">
+                <img 
+                  src={integration.logo} 
+                  alt={`${integration.name} logo`}
+                  className="w-full h-full object-contain"
+                />
               </div>
               
               {/* Integration Details */}
