@@ -1,3 +1,7 @@
+import unifiedAppImage from "@/assets/solution-unified-app.jpg";
+import brandedAppImage from "@/assets/solution-branded-app.jpg";
+import modernAppImage from "@/assets/solution-modern-app.jpg";
+
 const ProblemSolution = () => {
   const problems = [
     {
@@ -17,15 +21,18 @@ const ProblemSolution = () => {
   const solutions = [
     {
       title: "Only your mobile app",
-      description: "Your members can book their spa treatment, conference room, fitness class, or dinner reservation all from your app."
+      description: "Your members can book their spa treatment, conference room, fitness class, or dinner reservation all from your app.",
+      image: unifiedAppImage
     },
     {
       title: "Your app, your story", 
-      description: "Your app is an extension of your property, your vision. Not a third party company."
+      description: "Your app is an extension of your property, your vision. Not a third party company.",
+      image: brandedAppImage
     },
     {
       title: "A modern iOS and Android app",
-      description: "An app that is as refined as your property using the latest mobile technology and design."
+      description: "An app that is as refined as your property using the latest mobile technology and design.",
+      image: modernAppImage
     },
   ];
 
@@ -73,14 +80,24 @@ const ProblemSolution = () => {
             </h3>
             <div className="flex flex-col space-y-8 flex-1">
               {solutions.map((solution, index) => (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-accent flex-1">
-                  <div className="flex items-start space-x-4 h-full">
-                    <div className="w-8 h-8 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 rounded-full bg-white"></div>
-                    </div>
-                    <div className="flex flex-col">
-                      <h4 className="text-xl font-semibold text-primary mb-3">{solution.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+                <div key={index} className="bg-white rounded-2xl shadow-subtle border border-border transition-smooth hover:shadow-accent flex-1 overflow-hidden">
+                  <div className="relative">
+                    <img 
+                      src={solution.image} 
+                      alt={solution.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+                  </div>
+                  <div className="p-8">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 mt-1">
+                        <div className="w-4 h-4 rounded-full bg-white"></div>
+                      </div>
+                      <div className="flex flex-col">
+                        <h4 className="text-xl font-semibold text-primary mb-3">{solution.title}</h4>
+                        <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
