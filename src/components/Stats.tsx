@@ -1,20 +1,8 @@
 const Stats = () => {
   const stats = [
     {
-      number: "50+",
+      number: "2+",
       label: "Premium Venues Transformed"
-    },
-    {
-      number: "98%",
-      label: "Client Satisfaction Rate"
-    },
-    {
-      number: "2M+",
-      label: "Guest Interactions Improved"
-    },
-    {
-      number: "45%",
-      label: "Average Revenue Increase"
     }
   ];
 
