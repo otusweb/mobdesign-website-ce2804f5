@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <section className="py-20 bg-texture-subtle">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-center">
           {stats.map((stat, index) => (
             <div key={index} className="text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-subtle">
               <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
