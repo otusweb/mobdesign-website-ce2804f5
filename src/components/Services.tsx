@@ -4,23 +4,36 @@ import socialClubImage from "@/assets/social-club-lounge.jpg";
 const Services = () => {
   const services = [
     {
-      title: "Country Clubs & Golf Courses",
-      description: "Tee time bookings, tournament management, member directories, and pro shop integration that enhances the exclusive club experience.",
+      title: "Coworking spaces services",
+      description: "Conference room booking, desk booking and event booking that enhances the exclusive coworking space experience.",
       features: ["Tee Time Management", "Member Network", "Event Planning", "Pro Shop Integration"],
       image: countryClubImage
     },
     {
-      title: "Luxury Hotels & Resorts", 
-      description: "Concierge services, room service ordering, spa bookings, and guest communication platforms that redefine hospitality standards.",
-      features: ["Digital Concierge", "Room Service", "Spa & Activities", "Guest Services"],
+      title: "Luxury Hotels services", 
+      description: "Concierge services, room service ordering, room booking, and guest communication platforms that redefine hospitality standards.",
+      features: ["Digital Concierge", "Room Service", "Room Booking", "Guest Services"],
       image: socialClubImage
     },
     {
-      title: "Fine Dining Establishments",
-      description: "Reservation management, wine list access, chef's table bookings, and loyalty programs that create unforgettable dining experiences.", 
-      features: ["Reservation System", "Wine & Menu", "Special Events", "Loyalty Program"],
+      title: "Fine Dining services",
+      description: "Reservation management, menu list access and payment from the app to create unforgettable dining experiences.", 
+      features: ["Reservation System", "Menus", "Payment"],
+      image: countryClubImage
+    },
+    {
+      title: "Fitness & Wellness Services",
+      description: "Personal training sessions, group fitness classes and payment from the app  to elevate you fitness room experience.", 
+      features: ["Private sessions", "Group class", "Payment"],
+      image: countryClubImage
+    },
+    {
+      title: "Exclusive Spa services",
+      description: "Reservation management, and payment from the app to create unforgettable dining experiences.", 
+      features: ["Reservation System", "Menus", "Payment"],
       image: countryClubImage
     }
+
   ];
 
   return (

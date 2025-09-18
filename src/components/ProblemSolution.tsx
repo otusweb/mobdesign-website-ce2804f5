@@ -1,20 +1,24 @@
 const ProblemSolution = () => {
   const problems = [
     {
-      title: "Does your story not come through in your digital tools?",
-      description: "You spent months designing your property experience, only to have digital tools that don't tell your story?"
+      title: "Fragmented user experience", 
+      description: "Do your members have to use one app to open doors, one website to book their rooms and another app to order food?"
+    },
+    {
+      title: "Your brand is lost",
+      description: "You spent months designing your property experience, only to have a mobile experience that doesn't reflect your brand?"
     },
     {
       title: "Outdated Service Experience",
       description: "Are your digital tools still a dated-looking website that doesn't match modern expectations?"
     },
-    {
-      title: "Fragmented user experience", 
-      description: "Do your members have to use one app to open doors, one website to book their rooms and another app to order food?"
-    }
   ];
 
   const solutions = [
+    {
+      title: "Only your mobile app",
+      description: "Your members can book their spa treatment, conference room, fitness class, or dinner reservation all from your app."
+    },
     {
       title: "Your app, your story", 
       description: "Your app is an extension of your property, your vision. Not a third party company."
@@ -22,10 +26,6 @@ const ProblemSolution = () => {
     {
       title: "A modern iOS and Android app",
       description: "An app that is as refined as your property using the latest mobile technology and design."
-    },
-    {
-      title: "Only your mobile app",
-      description: "Your members can book their spa treatment, conference room, fitness class, or dinner reservation all from your app."
     },
   ];
 
