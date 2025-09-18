@@ -7,7 +7,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-20 bg-texture-subtle">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-center">
           {stats.map((stat, index) => (
