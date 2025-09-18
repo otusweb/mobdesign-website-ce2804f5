@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-
 const Contact = () => {
-  return (
-    <section className="py-24 bg-background">
+  return <section className="py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Header */}
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -39,12 +37,7 @@ const Contact = () => {
               Schedule a consultation to discuss your vision and requirements.
             </p>
             <Button asChild variant="outline">
-              <a 
-                href="https://tidycal.com/olivierdestrebecq/hospitality-mobile-app-informational-call" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent font-semibold hover:text-accent-light transition-smooth"
-              >
+              <a href="https://tidycal.com/olivierdestrebecq/hospitality-mobile-app-informational-call" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:text-accent-light transition-smooth">
                 Schedule Meeting
               </a>
             </Button>
@@ -52,19 +45,7 @@ const Contact = () => {
         </div>
 
         {/* Main CTA */}
-        <div className="bg-gradient-to-r from-primary to-primary-light rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-semibold mb-6">
-            Start Your Digital Transformation Today
-          </h3>
-          <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Every exceptional venue deserves an exceptional mobile experience. 
-            Let's discuss how we can bring your vision to life with cutting-edge technology 
-            and premium design.
-          </p>
-          <Button variant="hero" size="lg" className="text-lg px-12 py-4">
-            Book Your Free Consultation
-          </Button>
-        </div>
+        
 
         {/* Additional Info */}
         <div className="mt-16 text-sm text-muted-foreground">
@@ -74,8 +55,6 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
